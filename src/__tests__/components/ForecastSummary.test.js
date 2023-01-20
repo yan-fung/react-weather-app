@@ -28,7 +28,7 @@ describe("ForecastSummary", () => {
   });
 
   it("renders correct values for props", () => {
-    const { getByText } = render(
+    const { getByText, getByTestId } = render(
       <ForecastSummary
         date={validProps.date}
         description={validProps.description} 
@@ -38,7 +38,7 @@ describe("ForecastSummary", () => {
     );
 
     expect(getByText("11100011")).toHaveAttribute("class", "forecast-summary__date");
-    expect(getByText("stubIcon")).toHaveAttribute("class","forecast-summary__icon");
+    expect(getByTestId("forecast-icon")).toHaveAttribute("class","forecast-summary__icon");
     expect(getByText("Stub description")).toHaveAttribute("class","forecast-summary__description");
     expect(getByText("22°C")).toHaveAttribute("class","forecast-summary__temperature");
   });
