@@ -23,7 +23,7 @@ exports[`ForecastSummary renders correctly 1`] = `
     <div
       class="forecast-summary__temperature"
     >
-      22
+      22°C
     </div>
   </div>
 </DocumentFragment>
