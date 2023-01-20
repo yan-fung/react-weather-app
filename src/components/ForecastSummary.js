@@ -21,7 +21,7 @@ function ForecastSummary (props) {
             {icon}
         </div>
         <div className="forecast-summary__temperature">
-            {temperature}
+            {temperature.max}
         </div>
     </div>
   );
