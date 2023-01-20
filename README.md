@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Getting Started with React Weather Forecasting App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The weather forecasting application built with React and JSX.
+- Users are able to see the name and country of the city the forecast is for.
+- Users are able to see a summary of each day of the forecast, including the date, general desciption of the weather that day, and maximum temperature.
+- Users are able to click on one of the summaries to view all of the forecasted information for that date.
+
+This project is part of my bootcamp course at [Command Shift](https://www.commandshift.co/).
 
 ## Available Scripts
 
