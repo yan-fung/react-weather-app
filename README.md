@@ -1,4 +1,4 @@
-# Getting Started with React Weather Forecasting App
+# React Weather Forecasting App
 
 The weather forecasting application built with React and JSX.
 - Users are able to see the name and country of the city the forecast is for.
