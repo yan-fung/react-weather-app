@@ -3,9 +3,10 @@ import PropTypes from "prop-types";
 
 function ForecastDetails({ forecast }) {
   const { date, temperature, humidity, wind } = forecast;
+  const formattedDate = new Date(date).toDateString();
   return (
     <div className="forecast-details">
-      <div className="forecast-details__date">{date}</div>
+      <div className="forecast-details__date">{formattedDate}</div>
       <div className="forecast-details__max-temperature">
         {temperature.min}&deg;C
       </div>
