@@ -1,10 +1,10 @@
-import "../styles/App.css";
 import React from "react";
 import PropTypes from "prop-types";
 import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
+import ForecastDetails from "./ForecastDetails";
 
-import "../styles/App.css"
+import "../styles/App.css";
 
 function App({ location, forecasts }) {
   const { city, country } = location;
@@ -12,6 +12,7 @@ function App({ location, forecasts }) {
     <div className="weather-app">
       <LocationDetails city={city} country={country} />
       <ForecastSummaries forecasts={forecasts} />
+      <ForecastDetails forecast={forecasts[0]} />
     </div>
   );
 }
@@ -22,9 +23,14 @@ App.propTypes = {
       date: PropTypes.number,
       description: PropTypes.string,
       icon: PropTypes.string,
+      humidity: PropTypes.number,
       temperature: PropTypes.shape({
         max: PropTypes.number,
         min: PropTypes.number,
+      }),
+      wind: PropTypes.shape({
+        speed: PropTypes.number,
+        direction: PropTypes.string,
       }),
     })
   ).isRequired,
