@@ -23,7 +23,7 @@ describe("ForecastSummary", () => {
           icon={validProps.icon}
           temperature={validProps.temperature}
           onSelect={validProps.onSelect} 
-          />
+        />
     );
 
     expect(asFragment()).toMatchSnapshot();
@@ -35,7 +35,8 @@ describe("ForecastSummary", () => {
         date={validProps.date}
         description={validProps.description} 
         icon={validProps.icon}
-        temperature={validProps.temperature} 
+        temperature={validProps.temperature}
+        onSelect={validProps.onSelect}  
       />
     );
 
