@@ -58,14 +58,14 @@ exports[`ForecastSummaries renders correctly 1`] = `
         data-testid="forecast-icon"
       >
         <i
-          class="wi wi-day-sunny"
+          class="wi wi-day-snow"
           name="owm"
         />
       </div>
       <div
         class="forecast-summary__temperature"
       >
-        27°C
+        24°C
       </div>
       <button
         type="button"
