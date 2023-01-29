@@ -1,10 +1,12 @@
+/* eslint-disable-next-line no-console */
 import axios from "axios";
 
 const getForecast = (
   setSelectedDate,
   setForecasts,
   setLocation,
-  searchText
+  searchText,
+  setErrorMessage
 ) => {
   let endpoint = "https://cmd-shift-weather-app.onrender.com/forecast";
 
@@ -12,11 +14,25 @@ const getForecast = (
     endpoint += `?city=${searchText}`;
   }
 
-  return axios.get(endpoint).then((response) => {
-    setSelectedDate(response.data.forecasts[0].date);
-    setForecasts(response.data.forecasts);
-    setLocation(response.data.location);
-  });
+  axios
+    .get(endpoint)
+    .then((response) => {
+      setErrorMessage("");
+      setSelectedDate(response.data.forecasts[0].date);
+      setForecasts(response.data.forecasts);
+      setLocation(response.data.location);
+    })
+    .catch((error) => {
+      const { status } = error.response;
+      if (status === 404) {
+        setErrorMessage("No such town or city, try again!");
+        console.error("Location is not valid, error");
+      }
+      if (status === 500) {
+        setErrorMessage("Oops, server error, try again later.");
+        console.error("Server error", error);
+      }
+    });
 };
 
 export default getForecast;
