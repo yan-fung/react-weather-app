@@ -1,5 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../styles/SearchForm.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 function SearchForm({ searchText, setSearchText, onSubmit }) {
   const handleInputChange = (event) => {
@@ -8,9 +11,16 @@ function SearchForm({ searchText, setSearchText, onSubmit }) {
 
   return (
     <div className="search-form">
-      <input type="text" onChange={handleInputChange} value={searchText} />
-      <button type="submit" onClick={onSubmit}>
-        Search
+      <input
+        className="search-input"
+        id="search"
+        type="text"
+        onChange={handleInputChange}
+        value={searchText}
+        placeholder="Search here"
+      />
+      <button className="search__button" type="submit" onClick={onSubmit}>
+        <FontAwesomeIcon icon={faMagnifyingGlass} />
       </button>
     </div>
   );
