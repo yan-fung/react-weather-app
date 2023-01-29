@@ -6,29 +6,72 @@ exports[`ForecastDetails render correctly 1`] = `
     class="forecast-details"
   >
     <div
-      class="forecast-details__date"
+      class="forecast-details-container-1"
     >
-      Thu Jan 01 1970
+      <div
+        class="forecast-details__date"
+      >
+        Thu, 1 Jan
+      </div>
+      <div
+        class="forecast-details__icon"
+      >
+        <i
+          class="wi wi-day-sunny"
+          name="owm"
+        />
+      </div>
+      <div
+        class="forecast-details__description"
+      />
     </div>
     <div
-      class="forecast-details__max-temperature"
+      class="forecast-details-container-2"
     >
-      10°C
-    </div>
-    <div
-      class="forecast-details__max-temperature"
-    >
-      19°C
-    </div>
-    <div
-      class="forecast-details__humidity"
-    >
-      20%
-    </div>
-    <div
-      class="forecast-details__wind"
-    >
-      13mph s
+      <div
+        class="forecast-details__max-temperature"
+      >
+        <img
+          alt="high-temp logo"
+          height="25px"
+          src="high.png"
+          width="25px"
+        />
+        19°C
+      </div>
+      <div
+        class="forecast-details__low-temperature"
+      >
+        <img
+          alt="low-temp logo"
+          height="25px"
+          src="low.png"
+          width="25px"
+        />
+        10°C
+      </div>
+      <div
+        class="forecast-details__humidity"
+      >
+        <img
+          alt="humidity logo"
+          height="25px"
+          src="humidity.png"
+          width="25px"
+        />
+        20%
+      </div>
+      <div
+        class="forecast-details__wind"
+      >
+        <img
+          alt="wind logo"
+          height="30px"
+          src="wind.png"
+          width="30px"
+        />
+        13mph s
+      </div>
     </div>
   </div>
 </DocumentFragment>
