@@ -8,6 +8,7 @@ describe("ForecastDetails", () => {
    forecast: {
     date: 1111111,
     humidity: 20,
+    icon: "800",
     temperature: {
       min: 10,
       max: 19,
