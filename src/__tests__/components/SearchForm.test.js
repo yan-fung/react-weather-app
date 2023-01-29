@@ -30,7 +30,7 @@ describe("SearchForm", () => {
         );
         const button = screen.getAllByRole("button");
 
-        expect(button[0]).toHaveTextContent("Search")
+        expect(button[0]).toHaveClass("search__button")
     });
 
     it("calls correct function by clicking button", () => {
