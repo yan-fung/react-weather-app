@@ -1,10 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 import WeatherIcon from "react-icons-weather";
+import thermometer from "../styles/images/thermometer.png";
+import "../styles/ForecastSummary.css";
 
 function ForecastSummary(props) {
   const { date, description, icon, temperature, onSelect } = props;
-  const formattedDate = new Date(date).toDateString();
+  const formattedDate = new Date(date).toLocaleDateString("en-uk", {
+    weekday: "short",
+    day: "numeric",
+    month: "short",
+  });
 
   return (
     <div className="forecast-summary" data-testid="forecast-summary">
@@ -14,10 +20,16 @@ function ForecastSummary(props) {
         <WeatherIcon name="owm" iconId={icon} />
       </div>
       <div className="forecast-summary__temperature">
+        <img
+          src={thermometer}
+          alt="thermometer logo"
+          width="25px"
+          height="25px"
+        />
         {temperature.max}&deg;C
       </div>
-      <button type="button" onClick={() => onSelect(date)}>
-        More details
+      <button type="button" className="button" onClick={() => onSelect(date)}>
+        MORE
       </button>
     </div>
   );
