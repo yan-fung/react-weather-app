@@ -1,0 +1,50 @@
+.forecast-details {
+  margin: 0;
+  font-size: 25px;
+  order: 2;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 200px;
+  position: relative;
+  color: rgb(36, 30, 30);
+  text-shadow: 2px 2px 2px rgb(221, 215, 207);
+}
+
+.forecast-details-container-1 {
+  font-size: 35px;
+  background: rgb(198, 164, 164);
+  opacity: 0.9;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.forecast-details-container-2 {
+  font-size: 28px;
+}
+
+.forecast-details-container-2 img {
+  padding-right: 10px;
+}
+
+.forecast-details__icon {
+  font-size: 40px;
+}
+
+.forecast-details__date {
+  padding-bottom: 15px;
+}
+
+.forecast-details__humidity {
+  padding: 2px;
+}
+
+.forecast-details__max-temperature {
+  padding: 5px;
+}
+
+.forecast-details__low-temperature {
+  padding: 5px;
+}

@@ -1,0 +1,25 @@
+.search-form {
+  padding-top: 50px;
+}
+
+.search-input{
+  font-size: 28px;
+  background-color: rgb(235, 227, 218);
+  opacity: 0.8;
+  border-radius: 10px;
+  padding: 2px 12px;
+  border: 2px;
+}
+
+.search__button {
+  background-color: transparent;
+  overflow: hidden;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button:hover{
+  color: beige;
+}

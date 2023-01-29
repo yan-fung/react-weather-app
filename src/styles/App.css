@@ -1,3 +1,10 @@
 .weather-app {
-    margin: 0 20px;
+    margin: 100px 200px;
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.2fr;
+    gap: 0.5rem;
+    background: url(../styles/images/d839742a057e1d111d0373fa614de906.jpg) center center;
+    opacity: 0.8;
+    border-radius: 20px;
+    position: relative;
 }
