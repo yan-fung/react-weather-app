@@ -7,6 +7,8 @@ The weather forecasting application built with React and JSX.
 
 This project is part of my bootcamp course at [Command Shift](https://www.commandshift.co/).
 
+<img width="600" alt="Screenshot" src="https://user-images.githubusercontent.com/106375522/215323833-fa8f31d0-c145-43c4-9adb-5fedf914ff51.png">
+
 ## Available Scripts
 
 In the project directory, you can run:
