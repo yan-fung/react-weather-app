@@ -41,7 +41,9 @@ npm test
 - [PropTypes](https://www.npmjs.com/package/prop-types) is used for validating props.
 
 ## How To Use
-The app is showing the weather forecast for Manchester by default. Enter the name of a UK location to get the forecast. The app can only search for locations in the UK at the moment. 
+- The app is showing the weather forecast for Manchester by default. 
+- Enter the name of a UK location to get the forecast. 
+- The app can only search for locations in the UK at the moment. 
 
 ## Improvements & Further Development
 If I would have more time, I would like to add the following features and to my application:
