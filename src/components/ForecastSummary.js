@@ -4,8 +4,7 @@ import WeatherIcon from "react-icons-weather";
 import thermometer from "../styles/images/thermometer.png";
 import "../styles/ForecastSummary.css";
 
-function ForecastSummary(props) {
-  const { date, description, icon, temperature, onSelect } = props;
+function ForecastSummary({ date, description, icon, temperature, onSelect }) {
   const formattedDate = new Date(date).toLocaleDateString("en-uk", {
     weekday: "short",
     day: "numeric",

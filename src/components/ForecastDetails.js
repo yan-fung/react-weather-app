@@ -25,34 +25,19 @@ function ForecastDetails({ forecast }) {
       </div>
       <div className="forecast-details-container-2">
         <div className="forecast-details__max-temperature">
-          <img
-            src={highTempIcon}
-            alt="high-temp logo"
-            width="25px"
-            height="25px"
-          />
+          <img src={highTempIcon} alt="high-temp logo" />
           {temperature.max}&deg;C
         </div>
         <div className="forecast-details__low-temperature">
-          <img
-            src={lowTempIcon}
-            alt="low-temp logo"
-            width="25px"
-            height="25px"
-          />
+          <img src={lowTempIcon} alt="low-temp logo" />
           {temperature.min}&deg;C
         </div>
         <div className="forecast-details__humidity">
-          <img
-            src={humidityIcon}
-            alt="humidity logo"
-            width="25px"
-            height="25px"
-          />
+          <img src={humidityIcon} alt="humidity logo" />
           {humidity}%
         </div>
         <div className="forecast-details__wind">
-          <img src={windIcon} alt="wind logo" width="30px" height="30px" />
+          <img src={windIcon} alt="wind logo" />
           {wind.speed}mph {wind.direction}
         </div>
       </div>
@@ -64,8 +49,8 @@ export default ForecastDetails;
 
 ForecastDetails.propTypes = {
   forecast: PropTypes.shape({
-    date: PropTypes.number,
-    humidity: PropTypes.number,
+    date: PropTypes.number.isRequired,
+    humidity: PropTypes.number.isRequired,
     icon: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     temperature: PropTypes.shape({
