@@ -1,13 +1,10 @@
 .forecast-details {
-  margin: 0;
   font-size: 25px;
   order: 2;
   display: grid;
   align-items: center;
-  justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   padding: 20px 200px;
-  position: relative;
   color: rgb(36, 30, 30);
   text-shadow: 2px 2px 2px rgb(221, 215, 207);
 }
@@ -41,10 +38,19 @@
   padding: 2px;
 }
 
-.forecast-details__max-temperature {
+.forecast-details__max-temperature,
+.forecast-details__low-temperature {
   padding: 5px;
 }
 
-.forecast-details__low-temperature {
-  padding: 5px;
+.forecast-details__humidity img,
+.forecast-details__max-temperature img,
+.forecast-details__low-temperature img {
+  height: 25px;
+  width: 25px;
+}
+
+.forecast-details__wind img {
+  height: 30px;
+  width: 30px;
 }

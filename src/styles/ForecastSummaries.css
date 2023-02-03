@@ -1,6 +1,6 @@
 .forecast-summaries {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 60px;
-    order: 3;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  order: 3;
 }
