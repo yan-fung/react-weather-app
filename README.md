@@ -46,7 +46,7 @@ npm test
 - The app can only search for locations in the UK at the moment. 
 
 ## Improvements & Further Development
-If I would have more time, I would like to add the following features and to my application:
+If I would have more time, I would like to add the following features to my application:
 - Making the application more repsonsive to different sizes of device.
 - Allowing users to check the weather in different cities outside of the UK.
 - Changing the UI design to make it more appealing and user-friendly. 
