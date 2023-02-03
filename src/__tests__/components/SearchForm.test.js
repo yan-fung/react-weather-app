@@ -1,5 +1,4 @@
 import React, { fireEvent, render, screen } from "@testing-library/react";
-// import renderer from "react-test-renderer";
 import SearchForm from "../../components/SearchForm";
 
 describe("SearchForm", () => {
@@ -31,6 +30,7 @@ describe("SearchForm", () => {
         const button = screen.getAllByRole("button");
 
         expect(button[0]).toHaveClass("search__button")
+        expect(button).toHaveLength(1);
     });
 
     it("calls correct function by clicking button", () => {
