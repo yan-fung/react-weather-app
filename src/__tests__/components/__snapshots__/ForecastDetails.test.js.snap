@@ -33,9 +33,7 @@ exports[`ForecastDetails render correctly 1`] = `
       >
         <img
           alt="high-temp logo"
-          height="25px"
           src="high.png"
-          width="25px"
         />
         19°C
       </div>
@@ -44,9 +42,7 @@ exports[`ForecastDetails render correctly 1`] = `
       >
         <img
           alt="low-temp logo"
-          height="25px"
           src="low.png"
-          width="25px"
         />
         10°C
       </div>
@@ -55,9 +51,7 @@ exports[`ForecastDetails render correctly 1`] = `
       >
         <img
           alt="humidity logo"
-          height="25px"
           src="humidity.png"
-          width="25px"
         />
         20%
       </div>
@@ -66,9 +60,7 @@ exports[`ForecastDetails render correctly 1`] = `
       >
         <img
           alt="wind logo"
-          height="30px"
           src="wind.png"
-          width="30px"
         />
         13mph s
       </div>
