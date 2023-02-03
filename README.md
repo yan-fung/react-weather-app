@@ -1,4 +1,4 @@
-# React Weather Forecasting App
+# 🌞 🌧️ 🌀 React Weather Forecasting App
 
 The weather forecasting application built with React and JSX.
 - Users are able to see the name and country of the city the forecast is for.
@@ -9,21 +9,47 @@ This project is part of my bootcamp course at [Command Shift](https://www.comman
 
 <img width="600" alt="Screenshot" src="https://user-images.githubusercontent.com/106375522/215323833-fa8f31d0-c145-43c4-9adb-5fedf914ff51.png">
 
-## Available Scripts
+## Quick Start and Commands
 
-In the project directory, you can run:
+1. Clone the repo:
 
-### `npm start`
+```bash
+git clone https://github.com/yan-fung/react-technical-test.git
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. To install the package locally:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm test`
+3. Run the development server for the app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm start
+```
 
+4. To test the codes in tests folder. 
 
+```bash
+npm test
+```
+
+## Technology
+- [Jest](https://jestjs.io/docs/getting-started) and [React Testing library](https://testing-library.com/docs/react-testing-library/intro/) are used for testing purposes.
+- [Axios](https://www.npmjs.com/package/axios) is used to perform HTTP requests for retrieving data from the API
+- [PropTypes](https://www.npmjs.com/package/prop-types) is used for validating props.
+
+## How To Use
+The app is showing the weather forecast for Manchester by default. Enter the name of a UK location to get the forecast. The app can only search for locations in the UK at the moment. 
+
+## Improvements & Further Development
+If I would have more time, I would like to add the following features and to my application:
+- Making the application more repsonsive to different sizes of device.
+- Allowing users to check the weather in different cities outside of the UK.
+- Changing the UI design to make it more appealing and user-friendly. 
+
+## Authors
+🧑‍🚀 Yan Fung
+- GitHub [@yan-fung](https://github.com/yan-fung)
+- LinkedIn [@yan-fung](https://www.linkedin.com/in/yan-fung-4082401a4/)
